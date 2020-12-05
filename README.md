@@ -8,10 +8,11 @@ Docker version 19.03.13
 
 ### Descarga de imagen de MySQL
 Aclaro que esta descarga se hizo desde la terminal de Windows 10 (CMD)
-####Descarga de imagen: 
+
+#### Descarga de imagen
 `C:\name>docker pull mysql:8.0`
 
-####Luego corremos el contendor:
+#### Luego corremos el contendor
 
 `C:\name>docker run -d -p 33060:3306 --name mysql-db -e MYSQL_ROOT_PASSWORD=password mysql:8.0`
 
@@ -21,6 +22,6 @@ Aclaro que esta descarga se hizo desde la terminal de Windows 10 (CMD)
 - -e: environment le asignamos la contraseña.
 
 
-####Ingreso a shell de mysql para creacion de la base de datos:
+#### Ingreso a shell de mysql para creacion de la base de datos
 
 `C:\name>docker exec -it mysql-db mysql -u root -p`
