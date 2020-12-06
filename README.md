@@ -54,6 +54,12 @@ Version de PosgreSQL 10.15
 
 `CREATE DATABASE "NAME_DATABASE" WITH OWNER "NAME_USER";`
 
+#### Comandos necesarios para acceder a la data del esquema
+
+`GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA name_schema TO name_user;`
+
+`GRANT USAGE ON SCHEMA name_schema TO name_user;`
+
 #### Conexion desde terminal (CMD)
 
 `C:\name>psql -h localhost -p 5433 -U market`
