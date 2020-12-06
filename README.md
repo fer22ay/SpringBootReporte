@@ -42,6 +42,8 @@ Version de PosgreSQL 10.15
 #### Conexion a shell de postgres
 `C:\name>docker exec -it postgres psql -U postgres`
 
+- Esta opcion hasta cierto punto puede ser opcional, ya que podemos utilizar un gestor de base de datos grafico.
+
 #### Creacion de usuario y base datos
 
 `CREATE USER "NAME_USER" WITH PASSWORD 'PASSWORD';`
@@ -54,9 +56,9 @@ Version de PosgreSQL 10.15
 
 #### Conexion desde terminal (CMD)
 
-`psql -h localhost -p 5433 -U market`
+`C:\name>psql -h localhost -p 5433 -U market`
 
-- Luego nos solicitara el password este por defecto fue el que configuramos al inicializar el contenedor.
+- Luego nos solicitara el password este por defecto fue el que configuramos al inicializar el contenedor de postgres
 
 ## Conexion a spring boot
 
