@@ -41,3 +41,26 @@ Version de PosgreSQL 10.15
 
 #### Conexion a shell de postgres
 `C:\name>docker exec -it postgres psql -U postgres`
+
+#### Creacion de usuario y base datos
+
+`CREATE USER "NAME_USER" WITH PASSWORD 'PASSWORD';`
+
+`ALTER ROLE "NAME_USER WITH LOGIN;`
+
+`ALTER ROLE "NAME_USER" WITH CREATEDB;`
+
+`CREATE DATABASE "NAME_DATABASE" WITH OWNER "NAME_USER";`
+
+#### Conexion desde terminal (CMD)
+
+`psql -h localhost -p 5433 -U market`
+
+- Luego nos solicitara el password este por defecto fue el que configuramos al inicializar el contenedor.
+
+## Conexion a spring boot
+
+spring.datasource.url=jdbc:postgresql://localhost:5433/NAME_DATABASE
+spring.datasource.username=NAME_USER
+spring.datasource.password=PASSWORD_USER
+spring.jpa.show-sql=true
