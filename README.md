@@ -68,7 +68,7 @@ Version de PosgreSQL 10.15
 
 ## Conexion a spring boot
 
-spring.datasource.url=jdbc:postgresql://localhost:5433/NAME_DATABASE
-spring.datasource.username=NAME_USER
-spring.datasource.password=PASSWORD_USER
-spring.jpa.show-sql=true
++ spring.datasource.url=jdbc:postgresql://localhost:5433/NAME_DATABASE
++ spring.datasource.username=NAME_USER
++ spring.datasource.password=PASSWORD_USER
++ spring.jpa.show-sql=true
