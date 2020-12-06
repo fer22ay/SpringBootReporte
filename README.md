@@ -25,3 +25,12 @@ Aclaro que esta descarga se hizo desde la terminal de Windows 10 (CMD)
 #### Ingreso a shell de mysql para creacion de la base de datos
 
 `C:\name>docker exec -it mysql-db mysql -u root -p`
+
+## Docker Conexion PostgreSQL
+Version de PosgreSQL 10.15
+
+#### Descargar Imagen de PosgreSQL 10.15
+`C:\name>docker pull postgres:10.15`
+
+#### Inicializar el contenedor de PosgtreSQL
+`C:\name>docker run -d --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=postgres postgres:10.15`
