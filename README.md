@@ -37,7 +37,7 @@ Version de PosgreSQL 10.15
 
 - Es necesario especificar el directorio donde estaran las configuraciones de postgres, ya que sino no podra hacer la conexion via localhost.
 
-- Aunque se especifico el puerto en el comando de docker se debe configurar tambien en el archivo postgresql.conf.
+- Aunque se especifico el puerto en el comando de docker se debe configurar tambien en el archivo postgresql.conf para especificar el puerto.
 
 #### Conexion a shell de postgres
 `C:\name>docker exec -it postgres psql -U postgres`
