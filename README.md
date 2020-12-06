@@ -33,4 +33,11 @@ Version de PosgreSQL 10.15
 `C:\name>docker pull postgres:10.15`
 
 #### Inicializar el contenedor de PosgtreSQL
-`C:\name>docker run -d --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=postgres postgres:10.15`
+`C:\name>docker run -d --name postgrs -v C:/Users/aambr/postgres-data:/var/lib/postgresql/data -e POSTGRES_PASSWORD=postgres10 -p 5433:5433 postgres:10.15`
+
+- Es necesario especificar el directorio donde estaran las configuraciones de postgres, ya que sino no podra hacer la conexion via localhost.
+
+- Aunque se especifico el puerto en el comando de docker se debe configurar tambien en el archivo postgresql.conf.
+
+#### Conexion a shell de postgres
+`C:\name>docker exec -it postgres psql -U postgres`
